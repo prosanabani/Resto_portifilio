@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: face;
 }
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@font-face {
+    font-family: face;
+    src: url(Fonts/Josefin_Sans/static/JosefinSans-Light.ttf);
+    
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap'); */
 
 body{
     background-color: hsl(0, 41%, 71%);
@@ -183,11 +188,23 @@ body{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
 }
-.start-part .we-love {
+/* /////////////////////////////left-part///////////////////////////////// */
+.start-left{
+    background-color: cyan;
+    width: 52vw;
+    min-width: 500px;
+
+
+
+}
+.we-love {
     color: white;
     font-size: 5rem;
-    font-family: 'Josefin Sans', sans-serif;
+    /* ******************************************* */
+    /* font-family: 'Josefin Sans', sans-serif; */
     text-transform: capitalize;
     padding-left: 1rem;
     padding-bottom: 5rem;
@@ -217,7 +234,7 @@ body{
     position: relative;
     width: 200px;
     margin-left: 1rem;
-    z-index: -1;
+    z-index: 0;
   
 }
 .play-vid .a-play-vid{
@@ -277,18 +294,25 @@ body{
     margin-right: 1rem;
     
 }
+/* /////////////////////////right-part//////////////////////////// */
+.start-right{
+    background-color: yellow;
+    width: 40vw;
+    margin-left: 30px;
+}
+.welcome-img{
+    background-color:blue ;
+}
+.wel-img{
+    width: 100%;
+    aspect-ratio: 1;
+}
 /* ///////////////////////////////////////////////////////////////////////// */
 .welcome-part{
     /* background-color: chartreuse; */
 
 }
-.welcome-img{
-}
-.wel-img{
-    margin-left: 0;
-    width: 100vw;
-    height: 100vw;
-}
+
 .welspecial{
     /* background-color: black; */
     width: 100vw;
